@@ -1,0 +1,25 @@
+{
+  "proxyPort": 8790,
+  "apiKey": "",
+  "refreshIntervalMin": 10,
+  "linesIntervalSec": 6,
+  "schedule": {
+    "timezoneLabel": "鍖椾含鏃堕棿 (UTC+8)",
+    "timezoneOffsetMinutes": 480,
+    "peak": [
+      { "label": "涓婂崍楂樺嘲", "weekdays": [1, 2, 3, 4, 5], "start": "09:00", "end": "12:00" },
+      { "label": "涓嬪崍楂樺嘲", "weekdays": [1, 2, 3, 4, 5], "start": "14:00", "end": "18:00" }
+    ],
+    "offPeakFactor": 0.5,
+    "note": "瀹樻柟瑙勫垯锛氶珮宄?鍖椾含鏃堕棿鍛ㄤ竴鑷冲懆浜?9:00-12:00銆?4:00-18:00锛涘叾浣欐椂娈?绌洪棽鏃舵锛屼环鏍间负楂樺嘲鐨勪竴鍗娿€?,
+    "scheduleSource": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+    "scheduleUpdated": "2026-09-03"
+  },
+  "lines": [
+    "鎷栧姩鍙互鎶婃垜鏀惧埌浣犲枩娆㈢殑浣嶇疆鍝︼綖",
+    "鍔姏宸ヤ綔锛岄敊宄板共娲伙紝鐪侀挶鍏婚哺楸硷紒",
+    "娆ч哺椴?,
+    "鍚冨厜浣犵殑token锛屾墠鏄垜鏈€澶х殑蹇箰锛?,
+    "鎴戜細鍦ㄤ綘涓嶆敞鎰忕殑鏃跺€欏伔鍋峰悆鎺変綘鐨則oken鍝︼綖"
+  ]
+}

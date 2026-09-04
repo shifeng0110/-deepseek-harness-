@@ -3,3 +3,6 @@ bg-assets/
 
 # stray diagnostics
 livewall/.boot.log
+
+# whale runtime config holds the user API key - keep it local
+whale/config.json
