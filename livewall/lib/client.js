@@ -95,7 +95,7 @@ window.__ModuleLoader__.load({
     var DEFAULTS = {
       enabled: false,
       presetId: "off",
-      assetDir: "F:\\dpharnesstest\\bg-assets",
+      assetDir: "",
       params: {},
       source: "",
       sourceKind: ""

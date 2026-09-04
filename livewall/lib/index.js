@@ -5,6 +5,7 @@
 'use strict';
 import { readdirSync, statSync, createReadStream, createWriteStream, existsSync, mkdirSync } from 'node:fs';
 import { join, normalize } from 'node:path';
+import { homedir } from 'node:os';
 import { settingsNamespace } from '@deepseek-ai/dsh-settings';
 import z from '@deepseek-ai/schemastery';
 
@@ -12,7 +13,12 @@ export const NAMESPACE = 'livewall';
 export const NS = settingsNamespace(NAMESPACE);
 export const ROUTE_PREFIX = '/bg-assets';
 
-export const DEFAULT_ASSET_DIR = 'F:\\dpharnesstest\\bg-assets';
+// Default asset dir is resolved from the environment at runtime so the
+// package carries no machine-specific paths:
+//    > \bg-assets > <home>\.dsh\bg-assets
+export const DEFAULT_ASSET_DIR = (process.env.DSH_LIVEWALL_ASSET_DIR
+  || (process.env.DSH_HOME ? join(process.env.DSH_HOME, 'bg-assets') : '')
+  || join(homedir(), '.dsh', 'bg-assets'));
 const ASSET_EXT = new Set(['.mp4', '.webm', '.mov', '.gif', '.apng', '.png', '.jpg', '.jpeg', '.webp', '.avif', '.svg', '.bmp']);
 const MIME = {
   '.mp4': 'video/mp4', '.webm': 'video/webm', '.mov': 'video/mp4',
