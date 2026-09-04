@@ -15,4 +15,3 @@ DeepSeek Harness GUI 的悬浮桌宠:点击可切换 发呆/余额/台词 模式
 
 - 源码:`whale/`(widget.js 为核心,proxy.js 本地代理)
 - 使用说明:`whale/使用说明.md`
-- 隐私说明:真实 API Key 存于本地 `whale/config.json`(**不会提交**,已 gitignore),仓库只提供 `config.example.json`;`patch-gui.js` 的 dist 路径由环境变量推导,不含本机绝对路径。
