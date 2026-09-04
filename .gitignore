@@ -1,0 +1,5 @@
+# runtime asset dir for the livewall plugin (large user media lives here)
+bg-assets/
+
+# stray diagnostics
+livewall/.boot.log
